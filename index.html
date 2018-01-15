@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+<input id="myURL" type="url">
+<button id="button"> takeScreenshoot</button>
+
+<img id ="img" src="">
+
+
+<script>
+    $(document).ready(function () {
+        $("button").click(function () {
+            var url = $("#myURL").val();
+            console.log("url=",url);
+            window.location.href = `http://localhost:3000/downloadImage?url=${$("#myURL").val()}`;
+        });
+    });
+</script>
+
+</body>
+
+
+</html>
+
