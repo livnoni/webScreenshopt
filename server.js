@@ -9,7 +9,7 @@ var fs = require('fs');
 var app = express();
 
 //here you need to set the path to the root folder of your project:
-var rootFolder = "/home/yehuda/Desktop/tagit";
+var rootFolder = __dirname
 //here we save the screenshots:
 var imageFolderName = "images";
 
